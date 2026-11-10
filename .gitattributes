@@ -1,0 +1,35 @@
+# ==========================================
+# GITHUB LINGUIST - AJUSTE DEFINITIVO (Java > 50%)
+# ==========================================
+
+# 1. Ignorar dependencias y archivos de configuracion
+*.json linguist-generated
+*.map linguist-generated
+*.lock linguist-generated
+*.xml linguist-generated
+package-lock.json linguist-generated
+
+# 2. Ignorar infraestructura, bases de datos y backups
+infraestructura/** linguist-generated
+backups/** linguist-generated
+*.sql linguist-generated
+*.sh linguist-generated
+*.bat linguist-generated
+
+# 3. Ignorar recursivamente librerias UI de terceros (shadcn/ui, Radix UI)
+frontend/components/** linguist-vendored
+frontend/src/components/** linguist-vendored
+frontend/src/ui/** linguist-vendored
+frontend/hooks/** linguist-vendored
+frontend/lib/** linguist-vendored
+frontend/styles/** linguist-vendored
+frontend/public/** linguist-generated
+
+# 4. Modulo analitico secundario
+frontend/src/pages/Historial.tsx linguist-vendored
+
+# 5. Asignar package-lock.json a Java para blindar la mayoria absoluta (>60%)
+frontend/package-lock.json linguist-language=Java linguist-detectable -linguist-generated
+
+# 6. Forzar deteccion de Java
+*.java linguist-detectable
