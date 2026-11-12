@@ -51,3 +51,4 @@ class VerificationControllerTest {
                 .andExpect(jsonPath("$.message").value("Verificación completada"));
     }
 }
+

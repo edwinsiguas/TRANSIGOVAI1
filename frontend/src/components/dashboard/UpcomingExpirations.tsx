@@ -53,3 +53,4 @@ export function UpcomingExpirations({ data = [] }: { data?: any[] }) {
     </Card>
   );
 }
+

@@ -43,3 +43,4 @@ public class ActionLogController {
         return ApiResponse.success(auditoriaService.listarHistorial(query), null);
     }
 }
+

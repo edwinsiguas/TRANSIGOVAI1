@@ -54,3 +54,4 @@ class UsersControllerTest {
                 .andExpect(jsonPath("$.message").value("Usuario creado exitosamente"));
     }
 }
+

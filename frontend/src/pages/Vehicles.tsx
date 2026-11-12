@@ -980,3 +980,4 @@ export function VehiclesPage() {
 }
 
 // TODO: Refactorizar la carga de datos en el próximo sprint
+

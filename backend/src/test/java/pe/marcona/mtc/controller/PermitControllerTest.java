@@ -95,3 +95,4 @@ class PermitControllerTest {
                 .andExpect(jsonPath("$.message").value("Permiso revocado correctamente"));
     }
 }
+

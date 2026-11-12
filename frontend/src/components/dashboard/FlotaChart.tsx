@@ -57,3 +57,4 @@ export function FlotaChart({ data = [] }: { data?: any[] }) {
     </Card>
   );
 }
+

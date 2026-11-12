@@ -19,3 +19,4 @@ public interface IAuditoriaService {
     Map<String, Object> listarHistorial(Map<String, String> consulta);
 }
 
+

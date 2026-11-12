@@ -65,3 +65,4 @@ class VehicleQueryControllerTest {
                 .andExpect(jsonPath("$.data.estado").value("inactivo"));
     }
 }
+

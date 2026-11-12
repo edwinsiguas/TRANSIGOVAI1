@@ -45,3 +45,4 @@ class StatisticsControllerTest {
                 .andExpect(jsonPath("$.data.permits_active").value(1));
     }
 }
+

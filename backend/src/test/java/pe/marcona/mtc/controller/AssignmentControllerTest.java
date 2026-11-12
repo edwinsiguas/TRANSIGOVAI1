@@ -78,3 +78,4 @@ class AssignmentControllerTest {
                 .andExpect(jsonPath("$.message").value("Conductor asignado exitosamente"));
     }
 }
+

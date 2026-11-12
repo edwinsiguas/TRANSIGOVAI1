@@ -24,3 +24,4 @@ export default function () {
   // Reducimos la pausa a medio segundo para duplicar la agresividad del ataque
   sleep(0.5);
 }
+

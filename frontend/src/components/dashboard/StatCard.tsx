@@ -36,3 +36,4 @@ export function StatCard({ title, value, icon: Icon, trend, trendValue, alert }:
     </Card>
   );
 }
+

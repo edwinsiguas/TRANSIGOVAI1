@@ -44,3 +44,4 @@ public class UsersController {
         return ApiResponse.success(usuarioService.actualizar(body, request), "Usuario actualizado exitosamente");
     }
 }
+

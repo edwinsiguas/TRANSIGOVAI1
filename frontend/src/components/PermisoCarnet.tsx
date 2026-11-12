@@ -380,3 +380,4 @@ export function PermisoCarnet({ permit }: PermisoCarnetProps) {
     </div>
   )
 }
+

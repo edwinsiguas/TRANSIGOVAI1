@@ -224,3 +224,4 @@ public class EmpresaServiceImpl implements IEmpresaService {
         return new ApiException(HttpStatus.BAD_REQUEST, mensaje);
     }
 }
+

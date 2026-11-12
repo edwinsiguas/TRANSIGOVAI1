@@ -10,3 +10,4 @@ public interface ICodigoQrService {
     String generarQrBase64(String texto);
 }
 
+

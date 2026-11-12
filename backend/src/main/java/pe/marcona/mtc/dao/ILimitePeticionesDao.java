@@ -12,3 +12,4 @@ public interface ILimitePeticionesDao {
     void registrarPeticion(String ip, String accion);
 }
 
+

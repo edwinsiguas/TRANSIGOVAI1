@@ -57,3 +57,4 @@ public interface IPermisoService {
     String generarSiguienteNumeroPermiso();
 }
 
+

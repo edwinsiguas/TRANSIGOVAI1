@@ -51,3 +51,4 @@ public class ReportController {
                 .body(mensaje.getBytes(StandardCharsets.UTF_8));
     }
 }
+

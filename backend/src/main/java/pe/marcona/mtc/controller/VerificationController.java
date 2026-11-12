@@ -48,3 +48,4 @@ public class VerificationController {
         return ApiResponse.success(verificacionService.listar(query, usuario), "OK");
     }
 }
+

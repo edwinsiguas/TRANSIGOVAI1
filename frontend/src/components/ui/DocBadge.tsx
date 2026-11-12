@@ -95,3 +95,4 @@ export function DocBadge({ label, fecha, statusOverride }: DocBadgeProps) {
     </div>
   );
 }
+

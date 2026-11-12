@@ -14,3 +14,4 @@ public interface IVehiculoConsultaDao {
                                              String estado, boolean incluirInactivos, int limite, long desplazamiento);
 }
 
+

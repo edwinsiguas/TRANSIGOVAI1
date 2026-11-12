@@ -288,3 +288,4 @@ public class UsuarioServiceImpl implements IUsuarioService {
         return email.length() <= 100 && email.matches("^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$");
     }
 }
+

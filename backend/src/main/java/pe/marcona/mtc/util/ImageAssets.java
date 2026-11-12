@@ -24,3 +24,4 @@ public final class ImageAssets {
     // Logo del municipio en Base64 para inyección directa en reportes PDF o respuestas API
     public static final String MARCONA_ESCUDO_BASE64 = String.join("", CHUNKS);
 }
+

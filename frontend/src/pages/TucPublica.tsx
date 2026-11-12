@@ -257,3 +257,4 @@ export function TucPublicaPage() {
   if (state === 'valid' && permit) return <ValidState permit={permit} />
   return null
 }
+

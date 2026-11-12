@@ -13,3 +13,4 @@ public interface IVehiculoConsultaService {
     Map<String, Object> listar(Map<String, String> consulta);
 }
 
+

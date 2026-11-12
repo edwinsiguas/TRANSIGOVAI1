@@ -87,3 +87,4 @@ class ReportControllerTest {
                 .andExpect(content().string("Cada registro debe ser un objeto JSON."));
     }
 }
+

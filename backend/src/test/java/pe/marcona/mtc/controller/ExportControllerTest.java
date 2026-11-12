@@ -58,3 +58,4 @@ class ExportControllerTest {
                 .andExpect(jsonPath("$.data[0].placa").value("V1-1234"));
     }
 }
+

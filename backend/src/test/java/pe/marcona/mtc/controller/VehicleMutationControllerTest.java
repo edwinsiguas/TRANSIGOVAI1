@@ -73,3 +73,4 @@ class VehicleMutationControllerTest {
                 .andExpect(jsonPath("$.data.color").value("Azul"));
     }
 }
+

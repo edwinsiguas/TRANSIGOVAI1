@@ -136,3 +136,4 @@ public class AssignmentController {
         limitePeticionesService.verificar("api_general", request.getRemoteAddr(), 120, 60);
     }
 }
+

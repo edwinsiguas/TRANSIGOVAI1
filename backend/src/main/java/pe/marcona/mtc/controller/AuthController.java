@@ -38,3 +38,4 @@ public class AuthController {
         return ApiResponse.success(autenticacionService.verificarToken(request), "Token válido");
     }
 }
+

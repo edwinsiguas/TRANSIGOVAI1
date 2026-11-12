@@ -52,3 +52,4 @@ public class StatisticsController {
         limitePeticionesService.verificar("api_general", request.getRemoteAddr(), 120, 60);
     }
 }
+

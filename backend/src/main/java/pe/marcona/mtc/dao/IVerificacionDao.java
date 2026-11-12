@@ -24,3 +24,4 @@ public interface IVerificacionDao {
     Map<String, Object> obtenerEstadisticasHoy(long idUsuario);
 }
 
+

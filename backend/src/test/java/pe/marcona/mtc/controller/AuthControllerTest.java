@@ -75,3 +75,4 @@ class AuthControllerTest {
                 .andExpect(jsonPath("$.message").value("Email o contraseña incorrectos"));
     }
 }
+

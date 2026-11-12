@@ -9,3 +9,4 @@ public record ApiResponse<T>(boolean success, T data, String message) {
         return new ApiResponse<>(false, null, message);
     }
 }
+

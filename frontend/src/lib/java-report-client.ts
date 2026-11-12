@@ -55,3 +55,4 @@ export async function downloadJavaExcelReport(
   link.remove()
   window.setTimeout(() => URL.revokeObjectURL(url), 1000)
 }
+

@@ -24,3 +24,4 @@ public interface IUsuarioDao {
     int actualizarCampos(Long id, Map<String, Object> campos);
 }
 
+
