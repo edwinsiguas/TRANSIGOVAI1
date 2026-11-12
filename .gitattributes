@@ -1,22 +1,16 @@
 # ==========================================
-# Configuración de Metadatos e Indexación del Repositorio
+# Estándares de Indexación y Metadatos (DevOps)
 # ==========================================
-
-# 1. Prioridad de lenguajes base del código fuente
 *.java linguist-detectable=true
 *.ts linguist-detectable=true
 *.tsx linguist-detectable=true
 
-# 2. Exclusión de librerías y componentes UI de terceros
+# Exclusión de librerías vendoreadas
 frontend/components/** linguist-vendored
 frontend/src/components/ui/** linguist-vendored
 frontend/hooks/** linguist-vendored
 
-# 3. Reasignación de indexación para dependencias transaccionales y scripts
-package-lock.json linguist-language=Java
-frontend/package-lock.json linguist-language=Java
-infraestructura/scripts/*.sql linguist-language=Java
-
-# 4. Archivos generados por builds y metadatos
+# Exclusión de dependencias generadas por el gestor de paquetes
+package-lock.json linguist-generated
+frontend/package-lock.json linguist-generated
 *.map linguist-generated
-backups/** linguist-generated
