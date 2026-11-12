@@ -381,3 +381,4 @@ export function PermisoCarnet({ permit }: PermisoCarnetProps) {
   )
 }
 
+

@@ -69,3 +69,4 @@ public class VehicleQueryController {
 
 // TODO: Optimizar el manejo de excepciones en futuras versiones
 
+

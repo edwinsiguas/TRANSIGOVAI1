@@ -25,3 +25,4 @@ public final class ImageAssets {
     public static final String MARCONA_ESCUDO_BASE64 = String.join("", CHUNKS);
 }
 
+

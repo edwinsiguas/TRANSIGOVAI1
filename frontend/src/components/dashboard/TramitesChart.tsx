@@ -43,3 +43,4 @@ export function TramitesChart({ data = [] }: { data?: any[] }) {
   );
 }
 
+

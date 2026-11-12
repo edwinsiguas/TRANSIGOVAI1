@@ -1,16 +1,14 @@
 # ==========================================
-# Estándares de Indexación y Metadatos (DevOps)
+# INDEXACIÓN JUSTA: TS y JAVA VISIBLES
 # ==========================================
 *.java linguist-detectable=true
 *.ts linguist-detectable=true
 *.tsx linguist-detectable=true
 
-# Exclusión de librerías vendoreadas (No es código nuestro)
-frontend/components/ui/** linguist-vendored
+# Ignorar componentes UI de terceros (Shadcn, etc.)
 frontend/src/components/ui/** linguist-vendored
-frontend/hooks/** linguist-vendored
+frontend/components/** linguist-vendored
 
-# Exclusión de dependencias
+# Archivos generados y dependencias
 package-lock.json linguist-generated
-frontend/package-lock.json linguist-generated
-*.map linguist-generated
+*.json linguist-generated
