@@ -128,7 +128,7 @@ jobs:
       - name: Levantar Base de Datos (MySQL)
         run: |
           cd infraestructura
-          docker compose up -d db
+          docker compose up -d db 
           sleep 15
           
       - name: Iniciar Backend desde el JAR (Producción Simulada)
