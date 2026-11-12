@@ -67,4 +67,4 @@ public class VehicleQueryController {
     }
 }
 
-// Linguist cache refresh 1
+// TODO: Optimizar el manejo de excepciones en futuras versiones

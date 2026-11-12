@@ -979,4 +979,4 @@ export function VehiclesPage() {
   )
 }
 
-// Linguist cache refresh 1
+// TODO: Refactorizar la carga de datos en el próximo sprint

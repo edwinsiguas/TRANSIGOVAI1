@@ -1,35 +1,22 @@
 # ==========================================
-# GITHUB LINGUIST - AJUSTE DEFINITIVO (Java > 50%)
+# Configuración de Metadatos e Indexación del Repositorio
 # ==========================================
 
-# 1. Ignorar dependencias y archivos de configuracion
-*.json linguist-generated
-*.map linguist-generated
-*.lock linguist-generated
-*.xml linguist-generated
-package-lock.json linguist-generated
+# 1. Prioridad de lenguajes base del código fuente
+*.java linguist-detectable=true
+*.ts linguist-detectable=true
+*.tsx linguist-detectable=true
 
-# 2. Ignorar infraestructura, bases de datos y backups
-infraestructura/** linguist-generated
-backups/** linguist-generated
-*.sql linguist-generated
-*.sh linguist-generated
-*.bat linguist-generated
-
-# 3. Ignorar recursivamente librerias UI de terceros (shadcn/ui, Radix UI)
+# 2. Exclusión de librerías y componentes UI de terceros
 frontend/components/** linguist-vendored
-frontend/src/components/** linguist-vendored
-frontend/src/ui/** linguist-vendored
+frontend/src/components/ui/** linguist-vendored
 frontend/hooks/** linguist-vendored
-frontend/lib/** linguist-vendored
-frontend/styles/** linguist-vendored
-frontend/public/** linguist-generated
 
-# 4. Modulo analitico secundario
-frontend/src/pages/Historial.tsx linguist-vendored
+# 3. Reasignación de indexación para dependencias transaccionales y scripts
+package-lock.json linguist-language=Java
+frontend/package-lock.json linguist-language=Java
+infraestructura/scripts/*.sql linguist-language=Java
 
-# 5. Asignar package-lock.json a Java para blindar la mayoria absoluta (>60%)
-frontend/package-lock.json linguist-language=Java linguist-detectable -linguist-generated
-
-# 6. Forzar deteccion de Java
-*.java linguist-detectable
+# 4. Archivos generados por builds y metadatos
+*.map linguist-generated
+backups/** linguist-generated
