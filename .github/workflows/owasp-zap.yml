@@ -165,11 +165,35 @@ jobs:
   # ==========================================
   # CAJA 5: PRUEBAS DE CARGA (k6) (Depende de Build)
   # ==========================================
-  # load_testing:
-  #   name:  Pruebas de Carga (k6)
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Aquí iría el código de k6
-  #       run: echo "k6 configurado"
+  load_testing:
+    name: Pruebas de Carga (k6)
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código fuente
+        uses: actions/checkout@v4
+
+      - name: Configurar Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Descargar el JAR compilado
+        uses: actions/download-artifact@v4
+        with:
+          name: backend-jar
+          path: backend/target/
+
+      - name: Iniciar Backend desde el JAR
+        run: |
+          cd backend/target
+          nohup java -jar *.jar > backend.log 2>&1 &
+          sleep 40 # Esperar a que Spring Boot levante completamente
+
+      - name: Instalar y Ejecutar k6
+        uses: grafana/k6-action@v0.3.1
+        with:
+          filename: infraestructura/k6/load-test.js
+
   
